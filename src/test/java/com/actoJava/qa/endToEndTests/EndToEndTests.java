@@ -3,27 +3,29 @@ package com.actoJava.qa.endToEndTests;
 import com.actoJava.qa.base.BaseTest;
 import com.actoJava.qa.pages.HomePage;
 import com.actoJava.qa.pages.LoginPage;
-import com.actoJava.qa.pages.RegisterPage;
+import com.actoJava.qa.pages.UserRegisterPage;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class EndToEndTests extends BaseTest {
 
+    // this test uses hardcoded test data
+    // another class is created which uses parameterised test data from Excel
     @Test(priority = 1, enabled = true)
     public void testNewUserRegisterAndLogin() {
         Reporter.log("======Open application======", true);
         LoginPage loginPage = new LoginPage();
 
         Reporter.log("======Navigate to User Register page======", true);
-        RegisterPage registerPage = loginPage.navigateToRegisterPage();
+        UserRegisterPage userRegisterPage = loginPage.navigateToRegisterPage();
 
         Reporter.log("======Verify that Register Page is displayed======", true);
-        Assert.assertTrue(registerPage.isRegisterPageDisplayed(), "Register Page is displayed");
+        Assert.assertTrue(userRegisterPage.isRegisterPageDisplayed(), "Register Page is displayed");
 
-        if (registerPage.isRegisterPageDisplayed()) {
+        if (userRegisterPage.isRegisterPageDisplayed()) {
             Reporter.log("======Register a User with test data======", true);
-            registerPage.registerUser("firstName", "lastName", "email@test.com", "password");
+            userRegisterPage.registerUser("firstName", "lastName", "email@test.com", "password");
 
             Reporter.log("======Verify that Login Page is displayed======", true);
             Assert.assertTrue(loginPage.isLoginPageDisplayed(), "Login Page is displayed");

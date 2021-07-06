@@ -3,7 +3,7 @@ package com.actoJava.qa.featureAbcTests;
 import com.actoJava.qa.base.BaseTest;
 import com.actoJava.qa.pages.HomePage;
 import com.actoJava.qa.pages.LoginPage;
-import com.actoJava.qa.pages.RegisterPage;
+import com.actoJava.qa.pages.UserRegisterPage;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -16,14 +16,14 @@ public class FailureTest extends BaseTest {
         LoginPage loginPage = new LoginPage();
 
         Reporter.log("======Navigate to User Register page======", true);
-        RegisterPage registerPage = loginPage.navigateToRegisterPage();
+        UserRegisterPage userRegisterPage = loginPage.navigateToRegisterPage();
 
         Reporter.log("======Verify that Register Page is displayed======", true);
-        Assert.assertTrue(registerPage.isRegisterPageDisplayed(), "Register Page is displayed");
+        Assert.assertTrue(userRegisterPage.isRegisterPageDisplayed(), "Register Page is displayed");
 
-        if (registerPage.isRegisterPageDisplayed()) {
+        if (userRegisterPage.isRegisterPageDisplayed()) {
             Reporter.log("======Register a User with test data======", true);
-            LoginPage loginPage1 = registerPage.registerUser("firstName", "lastName", "email1@test.com", "password1");
+            LoginPage loginPage1 = userRegisterPage.registerUser("firstName", "lastName", "email1@test.com", "password1");
 
             Reporter.log("======Verify that Login Page is displayed======", true);
             Assert.assertTrue(loginPage1.isLoginPageDisplayed(), "Login Page is displayed");

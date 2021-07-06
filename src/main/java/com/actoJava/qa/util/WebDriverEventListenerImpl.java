@@ -1,13 +1,12 @@
 package com.actoJava.qa.util;
 
-import com.actoJava.qa.base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-public class WebDriverEventListenerImpl extends BaseTest implements WebDriverEventListener {
+public class WebDriverEventListenerImpl implements WebDriverEventListener {
 
 	// copy this whole class file as it is and it will work for your project
 	public void beforeNavigateTo(String url, WebDriver driver) {
@@ -77,72 +76,57 @@ public class WebDriverEventListenerImpl extends BaseTest implements WebDriverEve
 
 	public void beforeAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void afterAlertAccept(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void afterAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void beforeAlertDismiss(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void beforeNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void afterNavigateRefresh(WebDriver driver) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void beforeChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public void afterChangeValueOf(WebElement element, WebDriver driver, CharSequence[] keysToSend) {
 		// TODO Auto-generated method stub
-
 	}
 
 	public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void afterSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void beforeGetText(WebElement arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
 	}
-
 }

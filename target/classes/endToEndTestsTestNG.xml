@@ -9,7 +9,7 @@
     <test name="Dummy Website End to End TCs">
         <classes>
             <class name="com.actoJava.qa.endToEndTests.EndToEndTests"></class>
-            <!--<class name="com.actoJava.qa.featureAbcTests.FailureTest"></class>-->
+            <class name="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample"></class>
         </classes>
     </test>
 </suite>

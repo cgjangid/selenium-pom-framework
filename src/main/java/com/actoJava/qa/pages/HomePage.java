@@ -38,16 +38,10 @@ public class HomePage extends BaseTest {
         return loggedInUserName.getText();
     }
 
-    public TablesPage navigateToTablesPage() {
-        linkForTablesPage.click();
-        return new TablesPage();
-    }
-
     public LoginPage logoutFromApp() {
         loggedInUserName.click();
         logoutLink.click();
         logoutButtonInPopup.click();
         return new LoginPage();
     }
-
 }

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Dummy_WebSite_Tests" class="navigator-link">
-              <span class="suite-name border-failed">Dummy WebSite Tests</span>
+              <span class="suite-name border-passed">Dummy WebSite Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Dummy_WebSite_Tests" class="hide-methods failed suite-Dummy_WebSite_Tests"> (hide)</a> <!-- hide-methods failed suite-Dummy_WebSite_Tests -->
-                      <a href="#" panel-name="suite-Dummy_WebSite_Tests" class="show-methods failed suite-Dummy_WebSite_Tests"> (show)</a> <!-- show-methods failed suite-Dummy_WebSite_Tests -->
-                    </span>
-                    <div class="method-list-content failed suite-Dummy_WebSite_Tests">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.EndToEndTests" class="method navigator-link" hash-for-method="registerUserFailedTest">registerUserFailedTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Dummy_WebSite_Tests -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,16 @@
                       <a href="#" panel-name="suite-Dummy_WebSite_Tests" class="show-methods passed suite-Dummy_WebSite_Tests"> (show)</a> <!-- show-methods passed suite-Dummy_WebSite_Tests -->
                     </span>
                     <div class="method-list-content passed suite-Dummy_WebSite_Tests">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample" class="method navigator-link" hash-for-method="testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)">testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample" class="method navigator-link" hash-for-method="testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)">testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.EndToEndTests" class="method navigator-link" hash-for-method="testNewUserRegisterAndLogin">testNewUserRegisterAndLogin</a> <!-- method navigator-link -->
@@ -133,28 +129,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Dummy_WebSite_Tests" class="panel Dummy_WebSite_Tests">
-          <div class="suite-Dummy_WebSite_Tests-class-failed">
+          <div class="suite-Dummy_WebSite_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.actoJava.qa.endToEndTests.EndToEndTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registerUserFailedTest">
-                  </a> <!-- registerUserFailedTest -->
-                  <span class="method-name">registerUserFailedTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login Page is displayed expected [true] but found [false]
-	at com.actoJava.qa.endToEndTests.EndToEndTests.registerUserFailedTest(EndToEndTests.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)">
+                  </a> <!-- testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password) -->
+                  <span class="method-name">testNewUserMultipleTestData</span>
+                  <span class="parameters">(user1, last1, test@dummy.xyza, password)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)">
+                  </a> <!-- testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password) -->
+                  <span class="method-name">testNewUserMultipleTestData</span>
+                  <span class="parameters">(user2, last2, test2@dummy.xyza, password)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Dummy_WebSite_Tests-class-failed -->
+          </div> <!-- suite-Dummy_WebSite_Tests-class-passed -->
           <div class="suite-Dummy_WebSite_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,6 +184,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Dummy Website End to End TCs&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.actoJava.qa.endToEndTests.EndToEndTests&quot;/&gt;
+      &lt;class name=&quot;com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Dummy Website End to End TCs --&gt;
 &lt;/suite&gt; &lt;!-- Dummy WebSite Tests --&gt;
@@ -199,7 +198,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Dummy Website End to End TCs (1 class)</span>
+                <span class="test-name">Dummy Website End to End TCs (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,20 +224,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registerUserFailedTest')
-data.setCell(0, 2, 'com.actoJava.qa.endToEndTests.EndToEndTests')
-data.setCell(0, 3, 23068);
+data.setCell(0, 1, 'testNewUserMultipleTestData')
+data.setCell(0, 2, 'com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample')
+data.setCell(0, 3, 2570);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testNewUserRegisterAndLogin')
-data.setCell(1, 2, 'com.actoJava.qa.endToEndTests.EndToEndTests')
-data.setCell(1, 3, 5494);
+data.setCell(1, 1, 'testNewUserMultipleTestData')
+data.setCell(1, 2, 'com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample')
+data.setCell(1, 3, 2529);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testNewUserRegisterAndLogin')
+data.setCell(2, 2, 'com.actoJava.qa.endToEndTests.EndToEndTests')
+data.setCell(2, 3, 2434);
 window.suiteTableData['Dummy_WebSite_Tests']= { tableData: data, tableDiv: 'times-div-Dummy_WebSite_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Dummy_WebSite_Tests">
               </div> <!-- times-div-Dummy_WebSite_Tests -->
             </div> <!-- times-div -->
@@ -265,13 +268,33 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">registerUserFailedTest</span>
+              <span class="reporter-method-name">testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">======Open application======</span>
                 <span class="reporter-method-output">======Navigate to User Register page======</span>
                 <span class="reporter-method-output">======Verify that Register Page is displayed======</span>
                 <span class="reporter-method-output">======Register a User with test data======</span>
                 <span class="reporter-method-output">======Verify that Login Page is displayed======</span>
+                <span class="reporter-method-output">======Login to application with the registered user======</span>
+                <span class="reporter-method-output">======Verify that user is logged in and Home Page is displayed======</span>
+                <span class="reporter-method-output">======Verify that username is displayed after login======</span>
+                <span class="reporter-method-output">======Logout from application======</span>
+                <span class="reporter-method-output">======Verify that user is successfully logged out======</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">======Open application======</span>
+                <span class="reporter-method-output">======Navigate to User Register page======</span>
+                <span class="reporter-method-output">======Verify that Register Page is displayed======</span>
+                <span class="reporter-method-output">======Register a User with test data======</span>
+                <span class="reporter-method-output">======Verify that Login Page is displayed======</span>
+                <span class="reporter-method-output">======Login to application with the registered user======</span>
+                <span class="reporter-method-output">======Verify that user is logged in and Home Page is displayed======</span>
+                <span class="reporter-method-output">======Verify that username is displayed after login======</span>
+                <span class="reporter-method-output">======Logout from application======</span>
+                <span class="reporter-method-output">======Verify that user is successfully logged out======</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,26 +318,39 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">registerUserFailedTest</span>
-                <span class="method-start">6360 ms</span>
+                <span class="method-name">testNewUserRegisterAndLogin</span>
+                <span class="method-start">2822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29438 ms</span>
+                <span class="method-start">5258 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)</span>
+                <span class="method-start">7922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10493 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">29905 ms</span>
+                <span class="method-start">10787 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testNewUserRegisterAndLogin</span>
-                <span class="method-start">32519 ms</span>
+                <span class="method-name">testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)</span>
+                <span class="method-start">12179 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38017 ms</span>
+                <span class="method-start">14709 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

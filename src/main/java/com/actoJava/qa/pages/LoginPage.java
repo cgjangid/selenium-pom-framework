@@ -5,7 +5,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 public class LoginPage extends BaseTest {
 
@@ -48,8 +47,8 @@ public class LoginPage extends BaseTest {
         return new HomePage();
     }
         // function to navigate to User Register Page which will return a Register Page
-    public RegisterPage navigateToRegisterPage() {
+    public UserRegisterPage navigateToRegisterPage() {
         createAccountLink.click();
-        return new RegisterPage();
+        return new UserRegisterPage();
     }
 }

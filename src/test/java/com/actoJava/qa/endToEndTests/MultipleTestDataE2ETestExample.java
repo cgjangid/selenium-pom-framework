@@ -3,7 +3,7 @@ package com.actoJava.qa.endToEndTests;
 import com.actoJava.qa.base.BaseTest;
 import com.actoJava.qa.pages.HomePage;
 import com.actoJava.qa.pages.LoginPage;
-import com.actoJava.qa.pages.RegisterPage;
+import com.actoJava.qa.pages.UserRegisterPage;
 import com.actoJava.qa.util.ExcelUtility;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -12,20 +12,21 @@ import org.testng.annotations.Test;
 
 public class MultipleTestDataE2ETestExample extends BaseTest {
 
-    @Test(priority = 1, enabled = true, dataProvider = "getUserData")
+    // this test uses test data from dataProvider which fetches data from excel
+    @Test(priority = 2, enabled = true, dataProvider = "getUserData")
     public void testNewUserMultipleTestData(String firstName, String lastName, String email, String pwd) {
         Reporter.log("======Open application======", true);
         LoginPage loginPage = new LoginPage();
 
         Reporter.log("======Navigate to User Register page======", true);
-        RegisterPage registerPage = loginPage.navigateToRegisterPage();
+        UserRegisterPage userRegisterPage = loginPage.navigateToRegisterPage();
 
         Reporter.log("======Verify that Register Page is displayed======", true);
-        Assert.assertTrue(registerPage.isRegisterPageDisplayed(), "Register Page is displayed");
+        Assert.assertTrue(userRegisterPage.isRegisterPageDisplayed(), "Register Page is displayed");
 
-        if (registerPage.isRegisterPageDisplayed()) {
+        if (userRegisterPage.isRegisterPageDisplayed()) {
             Reporter.log("======Register a User with test data======", true);
-            registerPage.registerUser(firstName, lastName, email, pwd);
+            userRegisterPage.registerUser(firstName, lastName, email, pwd);
 
             Reporter.log("======Verify that Login Page is displayed======", true);
             Assert.assertTrue(loginPage.isLoginPageDisplayed(), "Login Page is displayed");
