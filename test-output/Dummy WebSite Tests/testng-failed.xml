@@ -6,11 +6,18 @@
   </listeners>
   <test thread-count="5" name="Dummy Website End to End TCs(failed)">
     <classes>
+      <class name="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testNewUserMultipleTestData"/>
+        </methods>
+      </class> <!-- com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample -->
       <class name="com.actoJava.qa.endToEndTests.EndToEndTests">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="registerUserFailedTest"/>
+          <include name="testNewUserRegisterAndLogin"/>
         </methods>
       </class> <!-- com.actoJava.qa.endToEndTests.EndToEndTests -->
     </classes>

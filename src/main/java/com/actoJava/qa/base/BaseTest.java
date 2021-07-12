@@ -36,7 +36,7 @@ public class BaseTest {
 
         try {
             //read properties file
-            String propFilePath = System.getProperty("user.dir") + "\\src\\main\\java\\com\\actoJava\\qa\\config\\config.properties";
+            String propFilePath = System.getProperty("user.dir") + "/src/main/resources/config/config.properties";
             System.out.println(propFilePath);
             fileInputStream = new FileInputStream(propFilePath);
 

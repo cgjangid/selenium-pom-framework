@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[======Launch Browser======]]>
@@ -73,106 +73,20 @@
     <line>
       <![CDATA[======Browser Closed======]]>
     </line>
-    <line>
-      <![CDATA[======Launch Browser======]]>
-    </line>
-    <line>
-      <![CDATA[======Open application======]]>
-    </line>
-    <line>
-      <![CDATA[======Navigate to User Register page======]]>
-    </line>
-    <line>
-      <![CDATA[======Verify that Register Page is displayed======]]>
-    </line>
-    <line>
-      <![CDATA[======Register a User with test data======]]>
-    </line>
-    <line>
-      <![CDATA[======Verify that Login Page is displayed======]]>
-    </line>
-    <line>
-      <![CDATA[======Login to application with the registered user======]]>
-    </line>
-    <line>
-      <![CDATA[======Verify that user is logged in and Home Page is displayed======]]>
-    </line>
-    <line>
-      <![CDATA[======Verify that username is displayed after login======]]>
-    </line>
-    <line>
-      <![CDATA[======Logout from application======]]>
-    </line>
-    <line>
-      <![CDATA[======Verify that user is successfully logged out======]]>
-    </line>
-    <line>
-      <![CDATA[======Browser Closed======]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-06-18T14:17:00 BST" name="Dummy WebSite Tests" finished-at="2021-06-18T14:17:15 BST" duration-ms="15053">
+  <suite started-at="2021-07-12T13:12:52 BST" name="Dummy WebSite Tests" finished-at="2021-07-12T13:13:09 BST" duration-ms="16773">
     <groups>
     </groups>
-    <test started-at="2021-06-18T14:17:00 BST" name="Dummy Website End to End TCs" finished-at="2021-06-18T14:17:15 BST" duration-ms="15053">
-      <class name="com.actoJava.qa.endToEndTests.EndToEndTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actoJava.qa.endToEndTests.EndToEndTests@6646153]" started-at="2021-06-18T14:17:00 BST" name="setup" finished-at="2021-06-18T14:17:03 BST" duration-ms="2820" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[======Launch Browser======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testNewUserRegisterAndLogin()[pri:1, instance:com.actoJava.qa.endToEndTests.EndToEndTests@6646153]" started-at="2021-06-18T14:17:03 BST" name="testNewUserRegisterAndLogin" finished-at="2021-06-18T14:17:05 BST" duration-ms="2434" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[======Open application======]]>
-            </line>
-            <line>
-              <![CDATA[======Navigate to User Register page======]]>
-            </line>
-            <line>
-              <![CDATA[======Verify that Register Page is displayed======]]>
-            </line>
-            <line>
-              <![CDATA[======Register a User with test data======]]>
-            </line>
-            <line>
-              <![CDATA[======Verify that Login Page is displayed======]]>
-            </line>
-            <line>
-              <![CDATA[======Login to application with the registered user======]]>
-            </line>
-            <line>
-              <![CDATA[======Verify that user is logged in and Home Page is displayed======]]>
-            </line>
-            <line>
-              <![CDATA[======Verify that username is displayed after login======]]>
-            </line>
-            <line>
-              <![CDATA[======Logout from application======]]>
-            </line>
-            <line>
-              <![CDATA[======Verify that user is successfully logged out======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testNewUserRegisterAndLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.actoJava.qa.endToEndTests.EndToEndTests@6646153]" started-at="2021-06-18T14:17:05 BST" name="tearDown" finished-at="2021-06-18T14:17:06 BST" duration-ms="275" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[======Browser Closed======]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.actoJava.qa.endToEndTests.EndToEndTests -->
+    <test started-at="2021-07-12T13:12:52 BST" name="Dummy Website End to End TCs" finished-at="2021-07-12T13:13:09 BST" duration-ms="16773">
       <class name="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:06 BST" name="setup" finished-at="2021-06-18T14:17:08 BST" duration-ms="1591" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:12:54 BST" name="setup" finished-at="2021-07-12T13:12:58 BST" duration-ms="4333" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[======Launch Browser======]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testNewUserMultipleTestData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:08 BST" name="testNewUserMultipleTestData" data-provider="getUserData" finished-at="2021-06-18T14:17:11 BST" duration-ms="2570" status="PASS">
+        <test-method signature="testNewUserMultipleTestData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:12:58 BST" name="testNewUserMultipleTestData" data-provider="getUserData" finished-at="2021-07-12T13:13:02 BST" duration-ms="4204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,21 +142,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- testNewUserMultipleTestData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:11 BST" name="tearDown" finished-at="2021-06-18T14:17:11 BST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:13:02 BST" name="tearDown" finished-at="2021-07-12T13:13:03 BST" duration-ms="372" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[======Browser Closed======]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:11 BST" name="setup" finished-at="2021-06-18T14:17:12 BST" duration-ms="1392" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:13:03 BST" name="setup" finished-at="2021-07-12T13:13:05 BST" duration-ms="2286" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[======Launch Browser======]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testNewUserMultipleTestData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:12 BST" name="testNewUserMultipleTestData" data-provider="getUserData" finished-at="2021-06-18T14:17:15 BST" duration-ms="2529" status="PASS">
+        <test-method signature="testNewUserMultipleTestData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:13:05 BST" name="testNewUserMultipleTestData" data-provider="getUserData" finished-at="2021-07-12T13:13:09 BST" duration-ms="3587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -298,7 +212,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testNewUserMultipleTestData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@79ad8b2f]" started-at="2021-06-18T14:17:15 BST" name="tearDown" finished-at="2021-06-18T14:17:15 BST" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample@548a102f]" started-at="2021-07-12T13:13:09 BST" name="tearDown" finished-at="2021-07-12T13:13:09 BST" duration-ms="353" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[======Browser Closed======]]>

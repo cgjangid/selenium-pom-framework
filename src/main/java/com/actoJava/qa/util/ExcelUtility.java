@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ExcelUtility {
-    public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "\\src\\main\\java\\com\\actoJava\\qa\\testdata\\newUserTestData.xlsx";
+    public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/resources/testData/newUserTestData.xlsx";
 
     static Workbook book;
     static Sheet sheet;

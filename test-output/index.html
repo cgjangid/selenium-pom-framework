@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +110,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample" class="method navigator-link" hash-for-method="testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)">testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dummy_WebSite_Tests" title="com.actoJava.qa.endToEndTests.EndToEndTests" class="method navigator-link" hash-for-method="testNewUserRegisterAndLogin">testNewUserRegisterAndLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Dummy_WebSite_Tests -->
@@ -153,21 +148,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Dummy_WebSite_Tests-class-passed -->
-          <div class="suite-Dummy_WebSite_Tests-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.actoJava.qa.endToEndTests.EndToEndTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testNewUserRegisterAndLogin">
-                  </a> <!-- testNewUserRegisterAndLogin -->
-                  <span class="method-name">testNewUserRegisterAndLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Dummy_WebSite_Tests-class-passed -->
         </div> <!-- panel Dummy_WebSite_Tests -->
         <div panel-name="test-xml-Dummy_WebSite_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -183,7 +163,6 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Dummy Website End to End TCs&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.actoJava.qa.endToEndTests.EndToEndTests&quot;/&gt;
       &lt;class name=&quot;com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Dummy Website End to End TCs --&gt;
@@ -198,7 +177,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Dummy Website End to End TCs (2 classes)</span>
+                <span class="test-name">Dummy Website End to End TCs (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,19 +203,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testNewUserMultipleTestData')
 data.setCell(0, 2, 'com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample')
-data.setCell(0, 3, 2570);
+data.setCell(0, 3, 4204);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testNewUserMultipleTestData')
 data.setCell(1, 2, 'com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample')
-data.setCell(1, 3, 2529);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testNewUserRegisterAndLogin')
-data.setCell(2, 2, 'com.actoJava.qa.endToEndTests.EndToEndTests')
-data.setCell(2, 3, 2434);
+data.setCell(1, 3, 3587);
 window.suiteTableData['Dummy_WebSite_Tests']= { tableData: data, tableDiv: 'times-div-Dummy_WebSite_Tests'}
 return data;
 }
@@ -252,21 +227,6 @@ return data;
             <span class="header-content">Reporter output for Dummy WebSite Tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testNewUserRegisterAndLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">======Open application======</span>
-                <span class="reporter-method-output">======Navigate to User Register page======</span>
-                <span class="reporter-method-output">======Verify that Register Page is displayed======</span>
-                <span class="reporter-method-output">======Register a User with test data======</span>
-                <span class="reporter-method-output">======Verify that Login Page is displayed======</span>
-                <span class="reporter-method-output">======Login to application with the registered user======</span>
-                <span class="reporter-method-output">======Verify that user is logged in and Home Page is displayed======</span>
-                <span class="reporter-method-output">======Verify that username is displayed after login======</span>
-                <span class="reporter-method-output">======Logout from application======</span>
-                <span class="reporter-method-output">======Verify that user is successfully logged out======</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)</span>
               <div class="reporter-method-output-div">
@@ -312,45 +272,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.actoJava.qa.endToEndTests.EndToEndTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testNewUserRegisterAndLogin</span>
-                <span class="method-start">2822 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5258 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.actoJava.qa.endToEndTests.MultipleTestDataE2ETestExample</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">6330 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">testNewUserMultipleTestData(user1, last1, test@dummy.xyza, password)</span>
-                <span class="method-start">7922 ms</span>
+                <span class="method-start">4341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10493 ms</span>
+                <span class="method-start">8545 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">10787 ms</span>
+                <span class="method-start">8917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNewUserMultipleTestData(user2, last2, test2@dummy.xyza, password)</span>
-                <span class="method-start">12179 ms</span>
+                <span class="method-start">11203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14709 ms</span>
+                <span class="method-start">14790 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
