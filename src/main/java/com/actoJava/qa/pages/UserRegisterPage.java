@@ -9,25 +9,25 @@ public class UserRegisterPage extends BaseTest {
 
     // object repository for register page
     @FindBy(xpath = "/html/body/div/div/div/div/div[2]/div/div[1]/h1")
-    WebElement registerPageGreet;
+    private WebElement registerPageGreet;
 
     @FindBy(id = "exampleFirstName")
-    WebElement firstNameRegister;
+    private WebElement firstNameRegister;
 
     @FindBy(id = "exampleLastName")
-    WebElement lastNameRegister;
+    private WebElement lastNameRegister;
 
     @FindBy(xpath = "//*[@id=\"exampleInputEmail\"]")
-    WebElement emailAddressRegister;
+    private WebElement emailAddressRegister;
 
     @FindBy(id = "exampleInputPassword")
-    WebElement passwordRegister;
+    private WebElement passwordRegister;
 
     @FindBy(id = "exampleRepeatPassword")
-    WebElement repeatPasswordRegister;
+    private WebElement repeatPasswordRegister;
 
     @FindBy(xpath = "/html/body/div/div/div/div/div[2]/div/form/button")
-    WebElement registerButtonRegister;
+    private WebElement registerButtonRegister;
 
     // constructor with PageFactory to initiate all the page objects
     public UserRegisterPage() {

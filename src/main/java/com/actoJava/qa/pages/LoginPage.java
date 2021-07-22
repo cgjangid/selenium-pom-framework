@@ -10,19 +10,19 @@ public class LoginPage extends BaseTest {
 
     // object repository for login page
     @FindBy(xpath = "/html/body/div/div/div/div/div/div/div[2]/div/div[1]/h1")
-    WebElement loginPageGreet;
+    private WebElement loginPageGreet;
 
     @FindBy(xpath = "/html/body/div/div/div/div/div/div/div[2]/div/div[3]/a")
-    WebElement createAccountLink;
+    private WebElement createAccountLink;
 
     @FindBy(xpath = "//*[@id=\"exampleInputEmail\"]")
-    WebElement emailLoginField;
+    private WebElement emailLoginField;
 
     @FindBy(id = "exampleInputPassword")
-    WebElement passwordLoginField;
+    private WebElement passwordLoginField;
 
     @FindBy(className = "btn-primary")
-    WebElement loginPrimaryButton;
+    private WebElement loginPrimaryButton;
 
     // constructor with PageFactory to initiate all the page objects
     public LoginPage() {
